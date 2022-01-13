@@ -1,0 +1,107 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saad_pcp.diseasewisedietplan.AddFoodFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Food Name"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+
+        android:padding="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Food Name"
+        android:id="@+id/EntryFoodName"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Food Category"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:padding="10dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/FoodCAt"
+        android:padding="10dp"
+        android:id="@+id/FoodCat"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Food Calories"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Food Calories"
+        android:padding="10dp"
+        android:id="@+id/EntryFoodCal"
+        android:singleLine="true"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Food Unit"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Food Unit"
+        android:padding="10dp"
+        android:id="@+id/EntryFoodUnit"
+        android:singleLine="true"
+        android:inputType="text"
+        />
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+          <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+              android:src="@drawable/ic_menu_gallery"
+            android:id="@+id/setFoodImg"
+            />
+          <ImageView
+              android:layout_width="50dp"
+              android:layout_height="50dp"
+              android:id="@+id/imgview"
+              android:padding="10dp"/>
+
+      </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Food"
+        android:id="@+id/Add_FoodData"
+        android:padding="10dp"
+
+        style="@style/ButtonColor"
+         />
+
+</LinearLayout>
+</FrameLayout>

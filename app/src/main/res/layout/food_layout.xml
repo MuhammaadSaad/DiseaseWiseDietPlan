@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/foodLayout"
+    >
+
+    <CheckBox
+        android:id="@+id/checkBoxFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:clickable="false"
+
+        android:layout_marginTop="20dp" />
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="52dp"
+        android:id="@+id/FoodImage"
+        android:src="@drawable/ic_menu_gallery"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txt_Food"
+        android:text="Food Name"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtFoodQty"
+            android:text="Quantity:"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/txt_FoodUnit"
+            android:text="Unit: "/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/txt_FoodCal"
+            android:text="Calories: "/>
+
+
+</LinearLayout>
+
+</LinearLayout>
+
+
+

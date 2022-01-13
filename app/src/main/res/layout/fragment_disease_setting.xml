@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.saad_pcp.diseasewisedietplan.DiseaseSetting"
+    >
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        >
+
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+
+            android:src="@drawable/logos" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Disease"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        />
+
+    <com.example.saad_pcp.diseasewisedietplan.widget.MultiSelector
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DiseaseSpinner"
+        >
+    </com.example.saad_pcp.diseasewisedietplan.widget.MultiSelector>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Set Disease"
+            android:id="@+id/SetDisease"
+            style="@style/ButtonColor" />
+    </LinearLayout>
+
+</FrameLayout>

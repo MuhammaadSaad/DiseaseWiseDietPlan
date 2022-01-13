@@ -1,0 +1,56 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.example.saad_pcp.diseasewisedietplan.AddDiseaseFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Disease Name"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Disease Name"
+            android:id="@+id/EntryDiseaseName"
+            android:singleLine="true"
+            android:inputType="text"
+            />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Not Suggested Food Items"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginBottom="10dp"
+        android:clickable="false" />
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:id="@+id/FoodData"
+        android:layout_marginBottom="10dp"
+
+
+   />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Disease"
+            android:id="@+id/Add_DiseaseData"
+            style="@style/ButtonColor"/>
+
+</LinearLayout>
+</FrameLayout>
